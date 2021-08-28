@@ -1,17 +1,22 @@
 <template>
   <div class = 'blank'>
     <p>Top of Blank</p>
-    <h2>{{msg}}</h2>
+    <span>{{blank.id}} {{blank.category}} {{blank.title}}</span>
+    <span>{{blank.description}}</span>
+    <span>{{blank.location}} {{blank.date}} {{blank.time}}</span>
+    <span>{{blank.organizer}}</span>
     <p>Bottom of Blank</p>
   </div>
 </template>
 <script>
-//import { defineComponent } from '@vue/composition-api'
 
 export default {
   name: 'blank',
   props: {
-    msg: String
+    msg: String,
+    blank: {
+      blank: Object
+    }
   }
 };
 
