@@ -1,5 +1,5 @@
 <template>
-  <div id="nav">{{ msg }}
+  <div id="navbox">{{ msg }}
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>  
@@ -9,7 +9,7 @@
 //import { defineComponent } from '@vue/composition-api'
 
 export default {
-  name: 'nav',
+  name: 'navbox',
   props: {
     msg: String
   }

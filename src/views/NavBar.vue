@@ -1,16 +1,16 @@
 <template>
   <div class="navbar">
-    <Nav msg="Navigation Bar"/>
+    <NavBox msg="Navigation Bar"/>
   </div>
 </template>
 
 <script>
-import Nav from '@/components/Nav';
+import NavBox from '@/components/NavBox';
 
 export default {
   name: 'navbar',
   components: {
-    Nav
+    NavBox
   }
 };
 </script>
